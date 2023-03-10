@@ -5,8 +5,8 @@ class Colormkdir < Formula
   desc ""
   homepage ""
   url "https://github.com/mimomimoto/colormkdir/archive/refs/heads/main.zip"
-  version ""
-  sha256 ""
+  version "0.0.1"
+  sha256 "ef567fb091575e127a7897c4c93bb685713a85918737b47cb5cca954f7485f4b"
   license ""
 
   # depends_on "cmake" => :build
