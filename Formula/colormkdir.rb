@@ -6,12 +6,14 @@ class Colormkdir < Formula
   homepage ""
   url "https://github.com/mimomimoto/colormkdir/archive/refs/heads/main.zip"
   version "0.0.1"
-  sha256 "ef567fb091575e127a7897c4c93bb685713a85918737b47cb5cca954f7485f4b"
+  sha256 "f70a0b951fb0a042617d08b42c8ee8bea82a87ba9d60b9e52bbfc90f818f3146"
   license ""
 
   # depends_on "cmake" => :build
 
   def install
-    bin.install "colormkdir"
+    libexec.install Dir["*"]
+    bin.write_exec_script libexec/"colormkdir"
+    chmod 0755, Dir["#{libexec}/*"]
   end
 end
